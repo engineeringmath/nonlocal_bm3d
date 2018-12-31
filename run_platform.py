@@ -6,8 +6,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
-I= sitk.ReadImage("/home/davood/dk_data/Abdomen/RawData/Training/img/tmp-5054-1864591500.nii")
-I= sitk.ReadImage("/home/davood/dk_data/Abdomen/RawData/Training/img/tmp-5054-1217466100.nii")
+I= sitk.ReadImage("///Abdomen/RawData/Training/img/tmp-5054-1864591500.nii")
+I= sitk.ReadImage("///Abdomen/RawData/Training/img/tmp-5054-1217466100.nii")
 
 I= sitk.GetArrayFromImage(I)
 I= np.transpose(I,[1,2,0])
